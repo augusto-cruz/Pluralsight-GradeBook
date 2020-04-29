@@ -90,5 +90,35 @@ Add the parameter on .vscode folder > `launch.json`:
 
 &nbsp;
 
+## Array
+
+    var numbers = new double[] { 12.7, 10.3, 6.11 };
+
+The compiler will discover the data type of the array, we can use implicit type:
+
+    var numbers = new [] { 12.7, 10.3, 6.11 };
+
+## List
+
+To use the array, we need to know how many items we will have or initialize the array with some values. To solve this, we use a List, which is dynamic.
+
+    List<double> grades = new List<double>();
+
+The compiler will discover the data type of the List, we can use implicit type:
+
+    var grades = new List<double>();
+
+## Decimal Formatting
+
+One decimal place:
+
+    Console.WriteLine($"The average grade is {result:N1}");
+
+Two decimal place: 
+
+    Console.WriteLine($"The average grade is {result:N2}");
+
+
+
 
   
